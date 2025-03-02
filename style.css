@@ -1,0 +1,526 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Set a minimum height to display body fully */
+    min-height: 100vh;
+    position: relative;
+    /* Relative positioning for absolute children if needed */
+}
+
+.navbar-container {
+    position: relative;
+    /* Set positioning for child absolute positioning */
+
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Center vertically */
+    color:  rgba(255, 85, 0, 0.895);
+    position: relative;
+    /* Keeps the navbar on top of the background */
+    z-index: 10;
+    /* Ensures the navbar stays in front */
+
+}
+
+.navbar {
+    display: flex;
+    margin: 20px;
+    gap: 10px;
+}
+
+.text {
+    margin: 20px;
+    gap: 10px;
+}
+
+/* Added styles for the background image */
+.navbar-container {
+    background-image: url('./charides pic/firstlandcar.jpeg');
+    /* Set your background image here */
+    background-size: cover;
+    /* Cover the entire navbar area */
+    background-position: center;
+    /* Center the background image */
+    height: 400px;
+    /* Specific height can be set based on your layout */
+    z-index: 0;
+    /* Ensures it stays behind the navbar */
+}
+
+.firsth1 {
+    color:  rgba(255, 85, 0, 0.895);
+    margin-left: 150px;
+    margin-top: 20px;
+
+}
+
+
+.button-container {
+    /* Centering container (optional) */
+    text-align: center;
+}
+
+.first-button {
+    padding: 15px 20px;
+    /* Increase size with padding */
+    font-size: 15px;
+    /* Increase font size */
+    border: none;
+    /* Remove default border */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    box-shadow: 0 4px 15px  rgba(255, 85, 0, 0.895);
+    /* Red box shadow */
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effects */
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.first-button:hover {
+    transform: translateY(-3px);
+    /* Lift button on hover */
+    box-shadow: 0 6px 20px  rgba(255, 85, 0, 0.895);
+    /* Enhance box shadow on hover */
+}
+
+.h3 {
+    margin-left: 115px;
+    margin-top: 40px;
+    color:  rgba(255, 85, 0, 0.895);
+
+}
+
+.circle-container {
+    position: relative;
+    /* Positioning context for absolute children */
+    top: 50px;
+    width: 100px;
+    /* Set a fixed width */
+    height: 100px;
+    /* Set a fixed height */
+    display: inline-flex;
+
+}
+
+.circle {
+    position: inherit;
+    left: 190px;
+    width: 10px;
+    /* Total width for the circle */
+    height: 10px;
+    /* Total height for the circle */
+    border-radius: 50%;
+    /* Make it circular */
+    margin: 5px;
+
+}
+
+.part1 {
+    background-color:  rgba(255, 85, 0, 0.895);
+    /* Red background */
+    clip-path: circle;
+
+
+}
+
+.part2 {
+    background-color:  rgba(255, 85, 0, 0.895);
+    clip-path: circle;
+}
+
+.part3 {
+    background-color:  rgba(255, 85, 0, 0.895);
+    /* Red background */
+    clip-path: circle;
+}
+
+.our-service-container {
+    margin: 30px;
+}
+
+.our-service-container h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.our-service {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 5px;
+    gap: 20px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+.service-content {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.service-content h4 {
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+
+.service-content img {
+    border-radius: 30px;
+    width: 100px;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+}
+
+.rides-img {
+    border: none;
+    /* Remove default border */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    box-shadow: 0 4px 15px rgba(24, 23, 23, 0.7);
+    /* black box shadow */
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effects */
+    z-index: 0;
+
+}
+
+.service-one h6 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: white;
+    z-index: 1;
+    position: relative;
+    top: 70px;
+}
+
+.service-one {
+    display: flex;
+}
+
+.second-button {
+    background-color: rgba(255, 85, 0, 0.895);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    position: relative;
+    top: -50px;
+}
+
+.charides {
+    width: 100%;
+
+}
+
+.about-us {
+    z-index: 10;
+    color: white;
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 30px;
+
+}
+
+.about-us p {
+    padding: 20px;
+}
+
+.firstlandcar {
+    width: 100%;
+
+    background-image: url('./charides pic/firstlandcar.jpeg');
+    /* Set your background image here */
+    background-size: cover;
+    /* Cover the entire navbar area */
+    background-position: center;
+    /* Center the background image */
+    height: 400px;
+    /* Specific height can be set based on your layout */
+    z-index: 0;
+    /* Ensures it stays behind the navbar */
+}
+
+.pressphone {
+    width: 100%;
+
+    background-image: url('./charides pic/pressphone.jpg');
+    /* Set your background image here */
+    background-size: cover;
+    /* Cover the entire navbar area */
+    background-position: center;
+    /* Center the background image */
+    height: 400px;
+    /* Specific height can be set based on your layout */
+    z-index: 0;
+    /* Ensures it stays behind the navbar */
+}
+
+.pressphone-notes {
+    z-index: 10;
+    color: white;
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    padding: 30px;
+    align-items: end;
+    text-align: right;
+}
+
+.pressphone-notes h2 {
+    color: rgba(255, 85, 0, 0.895);
+}
+
+.pressphone-notes h6 {
+    margin: 20px;
+}
+
+.pressphone-btn {
+    background-color: rgba(255, 85, 0, 0.895);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    position: relative;
+    top: -200px;
+    right: -100px;
+}
+
+.manpressphone {
+    width: 100%;
+
+    background-image: url('./charides pic/manpressphone.jpeg');
+    /* Set your background image here */
+    background-size: cover;
+    /* Cover the entire navbar area */
+    background-position: center;
+    /* Center the background image */
+    height: 400px;
+    /* Specific height can be set based on your layout */
+    z-index: 0;
+    /* Ensures it stays behind the navbar */
+    margin: 0;
+}
+
+.manpressphone-notes {
+    z-index: 10;
+    color: white;
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    margin-top: 50px;
+    padding-left: 15px;
+
+}
+
+.manpressphone-btn {
+    background-color: rgba(255, 85, 0, 0.895);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    position: relative;
+    bottom: 250px;
+    right: 110px;
+}
+
+.blogpic1 {
+
+    background-image: url('./charides pic/blogpic1.jpeg');
+    /* Set your background image here */
+    background-size: cover;
+    /* Cover the entire navbar area */
+    background-position: center;
+    z-index: 0;
+    /* Ensures it stays behind the navbar */
+
+}
+
+.blogpic2 {
+
+
+    background-image: url('./charides pic/blogpic2.jpeg');
+    /* Set your background image here */
+    background-size: contain;
+    /* Cover the entire navbar area */
+    background-position: right;
+    /* Center the background image */
+    z-index: 0;
+    /* Ensures it stays behind the navbar */
+
+
+}
+
+.blogpic1,
+.blogpic2 {
+    border-radius: 30px;
+    height: 150px;
+    width: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+
+
+}
+
+.blogpic-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+
+}
+
+.blog h1 {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.blog h2 {
+    z-index: 10;
+    color: white;
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    padding-left: 20px;
+    padding-top: 90px;
+}
+
+.scanback {
+    width: 100%;
+
+    background-image: url('./charides pic/scanback.jpeg');
+    /* Set your background image here */
+    background-size: cover;
+    /* Cover the entire navbar area */
+    background-position: center;
+    /* Center the background image */
+    height: 400px;
+    /* Specific height can be set based on your layout */
+    z-index: 0;
+    /* Ensures it stays behind the navbar */
+    margin-top: 20px;
+}
+
+.scantodownload {
+    width: 65%;
+
+    background-image: url('./charides pic/scantodownlaod.jpeg');
+    /* Set your background image here */
+    background-size: cover;
+    /* Cover the entire navbar area */
+    background-position: center;
+    /* Center the background image */
+    height: 250px;
+    /* Specific height can be set based on your layout */
+    z-index: 0;
+    /* Ensures it stays behind the navbar */
+    margin: 0;
+    z-index: 1;
+    position: absolute;
+    margin-top: 85px;
+    padding-left: 10px;
+}
+
+.scan-container {
+    display: flex;
+}
+
+.scan-container h2 {
+    z-index: 10;
+    color: black;
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    margin-top: 50px;
+    padding-left: 15px;
+}
+
+.blankblack {
+    width: 100%;
+
+    background-image: url('./charides pic/blankblack.jpeg');
+    /* Set your background image here */
+    background-size: cover;
+    /* Cover the entire navbar area */
+    background-position: center;
+    /* Center the background image */
+    height: 350px;
+    /* Specific height can be set based on your layout */
+    z-index: 0;
+    /* Ensures it stays behind the navbar */
+    margin-top: 0;
+}
+
+.blackcharides {
+    width: 35%;
+
+    background-image: url('./charides pic/blackcharides.jpeg');
+    /* Set your background image here */
+    background-size: cover;
+    /* Cover the entire navbar area */
+    background-position: center;
+    /* Center the background image */
+    height: 70px;
+    /* Specific height can be set based on your layout */
+    /* Ensures it stays behind the navbar */
+    margin-left: 5px;
+    border: none;
+    z-index: 1;
+    position: absolute;
+    margin-top: 40px;
+
+}
+
+.blackcharides-notes {
+    display: flex;
+    z-index: 10;
+    color: rgba(255, 85, 0, 0.895);
+    position: absolute;
+    bottom: 30px;
+    left: 90px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    padding-bottom: 70px;
+    gap: 30px;
+
+
+}
+
+.blackcharides-foot {
+    color: white;
+}
+
+.lastfoot {
+    display: flex;
+    z-index: 10;
+    color: rgba(255, 85, 0, 0.895);
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    padding: 10px;
+
+
+
+}
